@@ -16,6 +16,167 @@
         <title>Smart Wallet</title>
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="./index.html"
+                        >Smart <span class="text-primary">Wallet</span></a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >DashBoard</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Tasks
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="w-75 mx-auto text-center mt-sm-3 mt-md-5">
+                <h2 class="my-3">Sign Up to Continue</h2>
+                <div class="input-fields">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="input-user-name"
+                            >Name</label
+                        >
+                        <input
+                            id="input-user-name"
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter Your Name"
+                            aria-label="Username"
+                        />
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="input-user-email"
+                            >Email</label
+                        >
+                        <input
+                            id="input-user-email"
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter Your Email"
+                            aria-label="Username"
+                        />
+                    </div>
+                    <div class="input-group mb-3">
+                        <label
+                            class="input-group-text"
+                            for="input-user-userName"
+                            >UserName</label
+                        >
+                        <input
+                            id="input-user-userName"
+                            type="text"
+                            class="form-control"
+                            placeholder="Minimum 6 digits"
+                            aria-label="Username"
+                        />
+                    </div>
+                    <div class="input-group mb-3">
+                        <label
+                            class="input-group-text"
+                            for="input-user-password"
+                            >Password</label
+                        >
+                        <input
+                            id="input-user-password"
+                            type="password"
+                            class="form-control"
+                            placeholder="minimum 8 characters"
+                            aria-label="Username"
+                        />
+                    </div>
+                    <div>
+                        <p id="sign-up-errors" class="text-danger"></p>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button
+                            id="btn-sign-up"
+                            class="btn btn-primary fw-bold"
+                            type="button"
+                        >
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <p id="tempo"></p>
+                </div>
+            </section>
+        </main>
         <!-- Link Bootstrap Js -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
